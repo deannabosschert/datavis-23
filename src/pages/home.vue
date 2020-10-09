@@ -44,13 +44,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 body {
   background-color: #fbf3e4;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: $h1;
+  color: $purple-passion-1;
 }
 
 h2 {

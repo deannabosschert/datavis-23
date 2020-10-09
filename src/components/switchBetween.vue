@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .switchBetween {
   display: flex;
   padding: 2px;
