@@ -58,12 +58,7 @@ export default {
   display: flex;
   padding: 2px;
   border-radius: 10px;
-  /* max-width: 50vw; */
   justify-content: center;
-  margin: 2rem;
-  /* margin-left: 25vw;
-  margin-right: 25vw; */
-  /* background-color: blue; */
 }
 
 .switchBetween_label {
@@ -72,13 +67,11 @@ export default {
   background: white;
   text-align: center;
   align-self: center;
-  /* max-width: 12.5vw; */
   font-weight: 600;
-  margin-left: 2rem;
 }
 
 .switchBetween_radio:checked + .switchBetween_label {
-  background: #174e49;
+  background: black;
   color: white;
 }
 
