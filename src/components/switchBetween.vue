@@ -32,17 +32,6 @@
     <label for="dias" class="switchBetween_label">
       Dia's
     </label>
-
-    <input
-      type="radio"
-      id="lichtbeelden"
-      class="switchBetween_radio"
-      name="switchBetween-input"
-      value="lichtbeelden"
-    />
-    <label for="lichtbeelden" class="switchBetween_label">
-      Lichtbeelden
-    </label>
   </form>
 </template>
 
@@ -59,8 +48,6 @@ export default {
       else if (event.target.value === "dias") {
         return this.$emit("dias-click")
       }
-
-      return this.$emit("lichtbeelden-click")
     }
   }
 }

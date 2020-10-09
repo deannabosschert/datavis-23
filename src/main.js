@@ -8,7 +8,6 @@ import Info from "@/pages/info";
 import Fotos from "@/components/fotos";
 import Negatieven from "@/components/negatieven";
 import Dias from "@/components/dias";
-import Lichtbeelden from "@/components/lichtbeelden";
 
 // append filepath; which component will render when the user is on this URL-path?
 Vue.use(VueRouter);
@@ -28,10 +27,6 @@ const routes = [
       {
         path: "/dias",
         component: Dias
-      },
-      {
-        path: "/lichtbeelden",
-        component: Lichtbeelden
       }
     ]
   },

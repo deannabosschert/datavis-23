@@ -1,11 +1,10 @@
 <template>
   <main id="home">
-    <h1>Fotografiecollectie NMVW- indonesia</h1>
+    <h1>Dataviz</h1>
     <SwitchBetween
       @fotos-click="choice = 'fotos'"
       @negatieven-click="choice = 'negatieven'"
       @dias-click="choice = 'dias'"
-      @lichtbeelden-click="choice = 'lichtbeelden'"
     />
 
     <div v-if="choice === 'fotos'">
@@ -20,10 +19,6 @@
     <div v-if="choice === 'dias'">
       <Dias title="dia's" category="dias" />
     </div>
-
-    <div v-if="choice === 'lichtbeelden'">
-      <Lichtbeelden title="lichtbeelden" category="lichtbeelden" />
-    </div>
   </main>
 </template>
 
@@ -32,7 +27,6 @@ import SwitchBetween from "@/components/switchBetween.vue";
 import Fotos from "@/components/fotos.vue";
 import Negatieven from "@/components/negatieven.vue";
 import Dias from "@/components/dias.vue";
-import Lichtbeelden from "@/components/lichtbeelden.vue";
 
 export default {
   name: "home",
@@ -46,7 +40,6 @@ export default {
     SwitchBetween,
     Fotos,
     Negatieven,
-    Lichtbeelden,
     Dias
   }
 };
