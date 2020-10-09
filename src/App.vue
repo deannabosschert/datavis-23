@@ -16,7 +16,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .homeSymbol,
 .infoSymbol {
   font-size: 2rem;

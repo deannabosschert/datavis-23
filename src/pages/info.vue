@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #info p {
   max-width: 40vw;
   color: #2c3e50;
