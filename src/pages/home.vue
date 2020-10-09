@@ -2,45 +2,44 @@
   <main id="home">
     <h1>Dataviz</h1>
     <SwitchBetween
-      @fotos-click="choice = 'fotos'"
-      @negatieven-click="choice = 'negatieven'"
-      @dias-click="choice = 'dias'"
+      @nike-click="choice = 'nike'"
+      @adidas-click="choice = 'adidas'"
+      @idgaf-click="choice = 'idgaf'"
     />
 
-    <div v-if="choice === 'fotos'">
-      <Fotos title="foto's" category="fotos" />
-      />
+    <div v-if="choice === 'nike'">
+      <Nike title="nike" category="nike" />
     </div>
 
-    <div v-if="choice === 'negatieven'">
-      <Negatieven title="negatieven" category="negatieven" />
+    <div v-if="choice === 'adidas'">
+      <Adidas title="adidas" category="adidas" />
     </div>
 
-    <div v-if="choice === 'dias'">
-      <Dias title="dia's" category="dias" />
+    <div v-if="choice === 'idgaf'">
+      <Idgaf title="idgaf" category="idgaf" />
     </div>
   </main>
 </template>
 
 <script>
 import SwitchBetween from "@/components/switchBetween.vue";
-import Fotos from "@/components/fotos.vue";
-import Negatieven from "@/components/negatieven.vue";
-import Dias from "@/components/dias.vue";
+import Nike from "@/components/nike.vue";
+import Adidas from "@/components/adidas.vue";
+import Idgaf from "@/components/idgaf.vue";
 
 export default {
   name: "home",
   data() {
     return {
-      choice: "fotos"
+      choice: "nike"
     };
   },
   methods: {},
   components: {
     SwitchBetween,
-    Fotos,
-    Negatieven,
-    Dias
+    Nike,
+    Adidas,
+    Idgaf
   }
 };
 </script>

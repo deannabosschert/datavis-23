@@ -2,35 +2,35 @@
   <form class="switchBetween" @change="onSwitch">
     <input
       type="radio"
-      id="fotos"
+      id="nike"
       class="switchBetween_radio"
       name="switchBetween-input"
-      value="fotos"
+      value="nike"
       checked
     />
-    <label for="fotos" class="switchBetween_label">
-     Foto's
+    <label for="nike" class="switchBetween_label">
+     Nike
     </label>
     <input
       type="radio"
-      id="negatieven"
+      id="adidas"
       class="switchBetween_radio"
       name="switchBetween-input"
-      value="negatieven"
+      value="adidas"
     />
-    <label for="negatieven" class="switchBetween_label">
-      Negatieven
+    <label for="adidas" class="switchBetween_label">
+      Adidas
     </label>
 
     <input
       type="radio"
-      id="dias"
+      id="idgaf"
       class="switchBetween_radio"
       name="switchBetween-input"
-      value="dias"
+      value="idgaf"
     />
-    <label for="dias" class="switchBetween_label">
-      Dia's
+    <label for="idgaf" class="switchBetween_label">
+      Idgaf
     </label>
   </form>
 </template>
@@ -39,14 +39,14 @@
 export default {
   methods: {
     onSwitch(event) {
-      if (event.target.value === "fotos") {
-        return this.$emit("fotos-click")
+      if (event.target.value === "nike") {
+        return this.$emit("nike-click")
       }
-      else if (event.target.value === "negatieven") {
-        return this.$emit("negatieven-click")
+      else if (event.target.value === "adidas") {
+        return this.$emit("adidas-click")
       }
-      else if (event.target.value === "dias") {
-        return this.$emit("dias-click")
+      else if (event.target.value === "idgaf") {
+        return this.$emit("idgaf-click")
       }
     }
   }

@@ -5,9 +5,9 @@ import VueRouter from "vue-router";
 // list locations of the to-be-routed-components and append individual name for reference.
 import Home from "@/pages/home";
 import Info from "@/pages/info";
-import Fotos from "@/components/fotos";
-import Negatieven from "@/components/negatieven";
-import Dias from "@/components/dias";
+import Nike from "@/components/nike";
+import Adidas from "@/components/adidas";
+import Idgaf from "@/components/idgaf";
 
 // append filepath; which component will render when the user is on this URL-path?
 Vue.use(VueRouter);
@@ -17,16 +17,16 @@ const routes = [
     component: Home,
     children: [
       {
-        path: "/negatieven",
-        component: Negatieven
+        path: "/adidas",
+        component: Adidas
       },
       {
-        path: "/fotos",
-        component: Fotos
+        path: "/nike",
+        component: Nike
       },
       {
-        path: "/dias",
-        component: Dias
+        path: "/idgaf",
+        component: Idgaf
       }
     ]
   },
