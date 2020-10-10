@@ -157,3 +157,10 @@ article {
   color: black;
   box-shadow: inset 3px 3px 2px 2px rgba(0,0,0,1);
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
