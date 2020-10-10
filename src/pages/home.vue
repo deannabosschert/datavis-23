@@ -1,24 +1,23 @@
 <template>
-  <main id="home">
-    <h1>Dataviz</h1>
-    <SwitchBetween
-      @nike-click="choice = 'nike'"
-      @adidas-click="choice = 'adidas'"
-      @idgaf-click="choice = 'idgaf'"
-    />
+<main id="home">
+  <h1>datavisualisatie id</h1>
+  <section class="active">
+    <h2>Supermegabelangrijke vraag. Waar gaat je hart naar uit?</h2>
+    <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @idgaf-click="choice = 'idgaf'" />
 
     <div v-if="choice === 'nike'">
-      <Nike title="nike" category="nike" />
+      <Nike title="Nike" category="nike" />
     </div>
 
     <div v-if="choice === 'adidas'">
-      <Adidas title="adidas" category="adidas" />
+      <Adidas title="Adidas" category="adidas" />
     </div>
 
     <div v-if="choice === 'idgaf'">
-      <Idgaf title="idgaf" category="idgaf" />
+      <Idgaf title="Idgaf" category="idgaf" />
     </div>
-  </main>
+  </section>
+</main>
 </template>
 
 <script>
