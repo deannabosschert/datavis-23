@@ -50,11 +50,6 @@ html {
 
 body {
   line-height: $baseline;
-  padding: $baseline 0;
-  margin: 0 auto;
-  background-image: linear-gradient(rgba(200, 50, 50, .25) 1px, transparent 1px);
-  background-size: 1px $baseline;
-  width: 22rem;
 }
 
 p {
@@ -123,6 +118,8 @@ p {
 a {
   text-decoration: none;
   font-size: $p;
+  color: inherit;
+  font-size: inherit;
 }
 
 button, a {
@@ -135,10 +132,4 @@ button, a {
   font-weight: 700;
   font-style: italic;
   font-size: $brandHeader;
-}
-a {
-  color: inherit;
-  font-size: inherit;
-  color:inherit;
-  text-decoration: none;
 }
