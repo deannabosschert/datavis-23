@@ -1,6 +1,6 @@
 <template>
   <div :id="category">
-    <h2>{{ title }}</h2>
+    <h2 class="nikeHeader">{{ title }}</h2>
     <div class="content">
       <a v-for="(result, index) in results" :key="index" :href="result.url">
         <section>

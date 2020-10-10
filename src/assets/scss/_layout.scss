@@ -90,9 +90,6 @@ input[type=button] {
   max-height: 100%;
 }
 
-#question_1 {
-  margin-top: 1.5rem;
-}
 
 .choices {
   display: flex;
@@ -153,11 +150,6 @@ input[type=button] {
 section {
   visibility: hidden;
   // position: absolute;
-}
-
-#question_1 {
-  visibility: visible;
-  z-index: 5;
 }
 
 .selected {
