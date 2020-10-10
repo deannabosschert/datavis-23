@@ -11,25 +11,30 @@
     <div>
     <h3>13% van de studenten in Information Design!</h3>
     <p>Zou je nog meer gemeen hebben met deze studenten dan alleen jullie lievelingsmerk?</p>
-    <button class="nikeButton1" href="#nikeStats2">Let's find out!</button>
+    <button class="nikeButton1" href="#stats-2" @click="show1 = !show1">Let's find out!</button>
     </div>
   </article>
-  <article>
-  <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
+  <transition name="fade">
+  <article v-if="show1" id="stats-2">
+    <h3>1 nog meer stats!</h3>
   <div>
     <line-chart
       title="drieDingenEnzo"
     />
   </div>
+  <button class="nikeButton1" href="#stats-3" @click="show2 = !show2">nog meer dingen</button>
 </article>
-  <article>
-  <div>
-    <bar-chart
-      title="dingenEnzo"
-    />
-  </div>
+</transition>
+<transition name="fade">
+<article v-if="show2" id="stats-3">
+  <h3>2 nog meer stats!</h3>
+<div>
+  <bar-chart
+    title="dingenEnzo"
+  />
+</div>
 </article>
+</transition>
 </section>
 </template>
 
@@ -48,11 +53,12 @@ export default {
   },
   data() {
     return {
-      message: 'Hello Vue.js!'
+      show1: false,
+      show2: false
     };
   },
   methods: {
-   reverseMessage: function () {
+   showSecond: function () {
      this.message = this.message.split('').reverse().join('')
    }
  },
