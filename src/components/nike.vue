@@ -2,6 +2,16 @@
 <section :id="category">
   <h2 class="nikeHeader">{{ title }}</h2>
   <div>
+    <pie-chart
+      title="tweeDingenEnzo"
+    />
+  </div>
+  <div>
+    <line-chart
+      title="drieDingenEnzo"
+    />
+  </div>
+  <div>
     <bar-chart
       title="dingenEnzo"
     />
@@ -22,11 +32,15 @@
 <script>
 /*eslint 'no-console':0*/
 import BarChart from './charts/bar-chart.js'
+import PieChart from './charts/pie-chart.js'
+import LineChart from './charts/line-chart.js'
 
 export default {
   name: "category",
   components: {
     BarChart,
+    PieChart,
+    LineChart
   },
   data() {
     return {
