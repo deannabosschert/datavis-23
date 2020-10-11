@@ -11,23 +11,23 @@
     <div>
     <h3>13% van de studenten in Information Design!</h3>
     <p>Zou je nog meer gemeen hebben met deze studenten dan alleen jullie lievelingsmerk?</p>
-    <button class="nikeButton1" href="#stats-2" @click="show1 = !show1">Let's find out!</button>
+    <a class="nikeButton1" @click="showStats2 = !showStats2" href="#" v-scroll-to="'#stats-2'">Let's find out!</a>
     </div>
   </article>
   <transition name="fade">
-  <article v-if="show1" id="stats-2">
+  <article id="stats-2" v-if="showStats2">
     <h3>1 nog meer stats!</h3>
   <div>
     <line-chart
       title="drieDingenEnzo"
     />
   </div>
-  <button class="nikeButton1" href="#stats-3" @click="show2 = !show2">nog meer dingen</button>
+  <a class="nikeButton1" v-on:click="showStats3 = !showStats3" href="#" v-scroll-to="'#stats-3'">nog meer dingen</a>
 </article>
 </transition>
 <transition name="fade">
-<article v-if="show2" id="stats-3">
-  <h3>2 nog meer stats!</h3>
+<article v-if="showStats3">
+  <h3 id="stats-3">2 nog meer stats!</h3>
 <div>
   <bar-chart
     title="dingenEnzo"
@@ -53,15 +53,13 @@ export default {
   },
   data() {
     return {
-      show1: false,
-      show2: false
+      showStats2: false,
+      showStats3: false
     };
   },
   methods: {
-   showSecond: function () {
-     this.message = this.message.split('').reverse().join('')
-   }
- },
+
+  },
   props: {
     title: {
       type: String,

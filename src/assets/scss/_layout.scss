@@ -73,7 +73,7 @@ g {
 }
 
 button,
-input[type=button] {
+input[type=button], a {
   padding: 0.3rem;
   margin: 0.1rem;
   background-color: black;
@@ -99,7 +99,7 @@ input[type=button] {
   max-width: 50vw;
 }
 
-.choices button:active {
+.choices button:active, .choices a:active {
   background-color: white;
   color: black;
 }
@@ -142,7 +142,7 @@ input[type=button] {
   line-height: 1.3;
 }
 
-#stats-1 button {
+#stats-1 button, #stats-1 a {
   font-weight: bold;
   font-style: italic;
 }
