@@ -25,7 +25,8 @@
     <article v-if="showStats3">
       <h3 id="stats-3">nog meer stats!</h3>
       <div>
-        <bar-chart title="vierDingenEnzo" />
+        <scatter-chart title="vierDingenEnzo" />
+        <!-- <bar-chart title="vierDingenEnzo" /> -->
       </div>
       <a class="nikeButton1" v-on:click="[showStats4 = !showStats4, reverseButton3()]" href="#" v-scroll-to="'#stats-4'">{{ button3 }}</a>
     </article>
@@ -46,19 +47,21 @@
 import BarChart from './charts/bar-chart.js'
 import PieChart from './charts/pie-chart.js'
 import LineChart from './charts/line-chart.js'
+import ScatterChart from './charts/scatterplot-chart.js'
 
 export default {
   name: "category",
   components: {
     BarChart,
     PieChart,
-    LineChart
+    LineChart,
+    ScatterChart
   },
   data() {
     return {
-      showStats2: false,
-      showStats3: false,
-      showStats4: false,
+      showStats2: true,
+      showStats3: true,
+      showStats4: true,
       button1: "Let's find out!",
       button2: "meer dingen",
       button3: "nog meer dingen"
