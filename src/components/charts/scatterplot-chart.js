@@ -19,8 +19,8 @@ export default {
       datasets: [{
           label: 'Nike',
           fill: false,
-          borderColor: '#f87979',
-          backgroundColor: '#f87979',
+          borderColor: 'rgba(226,20,45,1)',
+          backgroundColor: 'rgba(226,20,45,0.7)',
           data: [{
             x: -2,
             y: 4
@@ -41,8 +41,8 @@ export default {
         {
           label: 'Adidas',
           fill: false,
-          borderColor: '#7acbf9',
-          backgroundColor: '#7acbf9',
+          borderColor: 'rgba(0,81,186,1)',
+          backgroundColor: 'rgba(0,81,186,0.7)',
           data: [{
             x: -2,
             y: -4
@@ -63,8 +63,8 @@ export default {
         {
           label: 'Geen',
           fill: false,
-          borderColor: 'green',
-          backgroundColor: 'green',
+          borderColor: 'rgba(232,208,30,1)',
+          backgroundColor: 'rgba(232,208,30,0.6)',
           data: [{
               x: -8,
               y: -1
@@ -84,8 +84,8 @@ export default {
             {
               label: 'Anders',
               fill: false,
-              borderColor: 'yellow',
-              backgroundColor: 'yellow',
+              borderColor: 'rgba(119,136,153,1)',
+              backgroundColor: 'rgba(119,136,153,0.6)',
               data: [{
                 x: -4,
                 y: -2
