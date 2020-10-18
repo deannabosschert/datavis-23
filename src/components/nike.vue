@@ -23,9 +23,9 @@
   </transition>
   <transition name="fade">
     <article v-if="showStats3">
-      <h3 id="stats-3">nog meer stats!</h3>
+      <h3 id="stats-3">Verhouding kleding/space</h3>
       <div>
-        <scatter-chart title="Favoriete merk onder ID20-studenten" />
+        <scatter-chart title="Verhouding kleding/kastruimte ID20-studenten" />
       </div>
       <a class="nikeButton1" v-on:click="[showStats4 = !showStats4, reverseButton3()]" href="#" v-scroll-to="'#stats-4'">{{ button3 }}</a>
     </article>
