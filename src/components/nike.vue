@@ -2,7 +2,7 @@
 <section :id="category">
   <h2 class="nikeHeader">{{ title }}</h2>
   <div>
-    <pie-chart title="tweeDingenEnzo" />
+    <pie-chart title="Favoriete merk onder ID20-studenten" />
   </div>
   <article id="stats-1">
     <p class="nikeIntro">Nice. Dan heb je dus dezelfde voorkeur als..</p>
@@ -16,7 +16,7 @@
     <article id="stats-2" v-if="showStats2">
       <h3>meer stats!</h3>
       <div>
-        <line-chart title="drieDingenEnzo" />
+        <line-chart title="Favoriete merk onder ID20-studenten" />
       </div>
       <a class="nikeButton1" v-on:click="[showStats3 = !showStats3, reverseButton2()]" href="#" v-scroll-to="'#stats-3'">{{ button2 }}</a>
     </article>
@@ -25,8 +25,7 @@
     <article v-if="showStats3">
       <h3 id="stats-3">nog meer stats!</h3>
       <div>
-        <scatter-chart title="vierDingenEnzo" />
-        <!-- <bar-chart title="vierDingenEnzo" /> -->
+        <scatter-chart title="Favoriete merk onder ID20-studenten" />
       </div>
       <a class="nikeButton1" v-on:click="[showStats4 = !showStats4, reverseButton3()]" href="#" v-scroll-to="'#stats-4'">{{ button3 }}</a>
     </article>
@@ -35,7 +34,7 @@
     <article id="stats-4" v-if="showStats4">
       <h3>nog veel meer stats!</h3>
       <div>
-        <bar-chart title="vijfDingenEnzo" />
+        <bar-chart title="Favoriete merk onder ID20-studenten" />
       </div>
     </article>
   </transition>
