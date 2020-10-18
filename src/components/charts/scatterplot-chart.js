@@ -19,501 +19,665 @@ export default {
   },
   mounted() {
     const adidasData = [{
-        "ID/persoon": 1,
+        "Persoon": 1,
         "lievelingsmerk": "Adidas",
-        "slaapkamergrootte": 11,
-        "kledingstukken": 78
+        data: {
+          y: 11,
+          x: 78
+        }
       },
       {
-        "ID/persoon": 2,
+        "Persoon": 2,
         "lievelingsmerk": "Adidas",
-        "slaapkamergrootte": 16,
-        "kledingstukken": 20
+        data: {
+          y: 16,
+          x: 20
+        }
       },
       {
-        "ID/persoon": 3,
+        "Persoon": 3,
         "lievelingsmerk": "Adidas",
-        "slaapkamergrootte": 22,
-        "kledingstukken": 80
+        data: {
+          y: 22,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 4,
+        "Persoon": 4,
         "lievelingsmerk": "Adidas",
-        "slaapkamergrootte": 24,
-        "kledingstukken": 50
+        data: {
+          y: 24,
+          x: 50
+        }
       },
       {
-        "ID/persoon": 5,
+        "Persoon": 5,
         "lievelingsmerk": "Adidas",
-        "slaapkamergrootte": 28,
-        "kledingstukken": 25
+        data: {
+          y: 28,
+          x: 25
+        }
       }
     ]
 
     const andersData = [{
-        "ID/persoon": 6,
+        "Persoon": 6,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 7,
-        "kledingstukken": 40
+        data: {
+          y: 7,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 7,
+        "Persoon": 7,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 7,
-        "kledingstukken": 40
+        data: {
+          y: 7,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 8,
+        "Persoon": 8,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 8,
-        "kledingstukken": 25
+        data: {
+          y: 8,
+          x: 25
+        }
       },
       {
-        "ID/persoon": 9,
+        "Persoon": 9,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 9,
-        "kledingstukken": 20
+        data: {
+          y: 9,
+          x: 20
+        }
       },
       {
-        "ID/persoon": 10,
+        "Persoon": 10,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 10,
-        "kledingstukken": 60
+        data: {
+          y: 10,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 12,
+        "Persoon": 12,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 10,
-        "kledingstukken": 80
+        data: {
+          y: 10,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 13,
+        "Persoon": 13,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 10,
-        "kledingstukken": 130
+        data: {
+          y: 10,
+          x: 130
+        }
       },
       {
-        "ID/persoon": 14,
+        "Persoon": 14,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 10,
-        "kledingstukken": 40
+        data: {
+          y: 10,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 15,
+        "Persoon": 15,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 11.5,
-        "kledingstukken": 80
+        data: {
+          y: 11.5,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 16,
+        "Persoon": 16,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 40
+        data: {
+          y: 12,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 17,
+        "Persoon": 17,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 70
+        data: {
+          y: 12,
+          x: 70
+        }
       },
       {
-        "ID/persoon": 18,
+        "Persoon": 18,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 100
+        data: {
+          y: 12,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 19,
+        "Persoon": 19,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 20
+        data: {
+          y: 12,
+          x: 20
+        }
       },
       {
-        "ID/persoon": 20,
+        "Persoon": 20,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 25
+        data: {
+          y: 12,
+          x: 25
+        }
       },
       {
-        "ID/persoon": 21,
+        "Persoon": 21,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 12,
-        "kledingstukken": 60
+        data: {
+          y: 12,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 22,
+        "Persoon": 22,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 13,
-        "kledingstukken": 125
+        data: {
+          y: 13,
+          x: 125
+        }
       },
       {
-        "ID/persoon": 23,
+        "Persoon": 23,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 14,
-        "kledingstukken": 45
+        data: {
+          y: 14,
+          x: 45
+        }
       },
       {
-        "ID/persoon": 24,
+        "Persoon": 24,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 14,
-        "kledingstukken": 200
+        data: {
+          y: 14,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 25,
+        "Persoon": 25,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 14,
-        "kledingstukken": 120
+        data: {
+          y: 14,
+          x: 120
+        }
       },
       {
-        "ID/persoon": 26,
+        "Persoon": 26,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 120
+        data: {
+          y: 15,
+          x: 120
+        }
       },
       {
-        "ID/persoon": 27,
+        "Persoon": 27,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 40
+        data: {
+          y: 15,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 28,
+        "Persoon": 28,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 45
+        data: {
+          y: 15,
+          x: 45
+        }
       },
       {
-        "ID/persoon": 29,
+        "Persoon": 29,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 200
+        data: {
+          y: 15,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 30,
+        "Persoon": 30,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 150
+        data: {
+          y: 15,
+          x: 150
+        }
       },
       {
-        "ID/persoon": 31,
+        "Persoon": 31,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15,
-        "kledingstukken": 75
+        data: {
+          y: 15,
+          x: 75
+        }
       },
       {
-        "ID/persoon": 32,
+        "Persoon": 32,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 15.6,
-        "kledingstukken": 70
+        data: {
+          y: 15.6,
+          x: 70
+        }
       },
       {
-        "ID/persoon": 33,
+        "Persoon": 33,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 16,
-        "kledingstukken": 30
+        data: {
+          y: 16,
+          x: 30
+        }
       },
       {
-        "ID/persoon": 34,
+        "Persoon": 34,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 16,
-        "kledingstukken": 40
+        data: {
+          y: 16,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 35,
+        "Persoon": 35,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 16,
-        "kledingstukken": 100
+        data: {
+          y: 16,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 36,
+        "Persoon": 36,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 17,
-        "kledingstukken": 100
+        data: {
+          y: 17,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 37,
+        "Persoon": 37,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 17.5,
-        "kledingstukken": 275
+        data: {
+          y: 17.5,
+          x: 275
+        }
       },
       {
-        "ID/persoon": 38,
+        "Persoon": 38,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 17.6,
-        "kledingstukken": 25
+        data: {
+          y: 17.6,
+          x: 25
+        }
       },
       {
-        "ID/persoon": 39,
+        "Persoon": 39,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 18,
-        "kledingstukken": 20
+        data: {
+          y: 18,
+          x: 20
+        }
       },
       {
-        "ID/persoon": 40,
+        "Persoon": 40,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 18,
-        "kledingstukken": 200
+        data: {
+          y: 18,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 41,
+        "Persoon": 41,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 18,
-        "kledingstukken": 80
+        data: {
+          y: 18,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 42,
+        "Persoon": 42,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 150
+        data: {
+          y: 20,
+          x: 150
+        }
       },
       {
-        "ID/persoon": 43,
+        "Persoon": 43,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 10
+        data: {
+          y: 20,
+          x: 10
+        }
       },
       {
-        "ID/persoon": 44,
+        "Persoon": 44,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 30
+        data: {
+          y: 20,
+          x: 30
+        }
       },
       {
-        "ID/persoon": 45,
+        "Persoon": 45,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 60
+        data: {
+          y: 20,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 46,
+        "Persoon": 46,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 60
+        data: {
+          y: 20,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 47,
+        "Persoon": 47,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 200
+        data: {
+          y: 20,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 48,
+        "Persoon": 48,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 100
+        data: {
+          y: 20,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 49,
+        "Persoon": 49,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 80
+        data: {
+          y: 20,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 50,
+        "Persoon": 50,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 90
+        data: {
+          y: 20,
+          x: 90
+        }
       },
       {
-        "ID/persoon": 51,
+        "Persoon": 51,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 22,
-        "kledingstukken": 200
+        data: {
+          y: 22,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 52,
+        "Persoon": 52,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 22,
-        "kledingstukken": 100
+        data: {
+          y: 22,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 53,
+        "Persoon": 53,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 22.5,
-        "kledingstukken": 70
+        data: {
+          y: 22.5,
+          x: 70
+        }
       },
       {
-        "ID/persoon": 54,
+        "Persoon": 54,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 22.5,
-        "kledingstukken": 89
+        data: {
+          y: 22.5,
+          x: 89
+        }
       },
       {
-        "ID/persoon": 55,
+        "Persoon": 55,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 24,
-        "kledingstukken": 100
+        data: {
+          y: 24,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 56,
+        "Persoon": 56,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 24,
-        "kledingstukken": 40
+        data: {
+          y: 24,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 57,
+        "Persoon": 57,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 24,
-        "kledingstukken": 100
+        data: {
+          y: 24,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 59,
+        "Persoon": 59,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 25,
-        "kledingstukken": 140
+        data: {
+          y: 25,
+          x: 140
+        }
       },
       {
-        "ID/persoon": 60,
+        "Persoon": 60,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 25,
-        "kledingstukken": 150
+        data: {
+          y: 25,
+          x: 150
+        }
       },
       {
-        "ID/persoon": 61,
+        "Persoon": 61,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 25,
-        "kledingstukken": 60
+        data: {
+          y: 25,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 62,
+        "Persoon": 62,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 26,
-        "kledingstukken": 30
+        data: {
+          y: 26,
+          x: 30
+        }
       },
       {
-        "ID/persoon": 63,
+        "Persoon": 63,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 32,
-        "kledingstukken": 300
+        data: {
+          y: 32,
+          x: 300
+        }
       },
       {
-        "ID/persoon": 64,
+        "Persoon": 64,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 35,
-        "kledingstukken": 70
+        data: {
+          y: 35,
+          x: 70
+        }
       },
       {
-        "ID/persoon": 65,
+        "Persoon": 65,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 36,
-        "kledingstukken": 60
+        data: {
+          y: 36,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 66,
+        "Persoon": 66,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 50,
-        "kledingstukken": 200
+        data: {
+          y: 50,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 68,
+        "Persoon": 68,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 52,
-        "kledingstukken": 60
+        data: {
+          y: 52,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 69,
+        "Persoon": 69,
         "lievelingsmerk": "Anders",
-        "slaapkamergrootte": 56,
-        "kledingstukken": 300
+        data: {
+          y: 56,
+          x: 300
+        }
       }
     ]
 
     const geenData = [{
-        "ID/persoon": 70,
+        "Persoon": 70,
         "lievelingsmerk": "Geen",
-        "slaapkamergrootte": 7.4,
-        "kledingstukken": 60
+        data: {
+          y: 7.4,
+          x: 60
+        }
       },
       {
-        "ID/persoon": 71,
+        "Persoon": 71,
         "lievelingsmerk": "Geen",
-        "slaapkamergrootte": 10,
-        "kledingstukken": 50
+        data: {
+          y: 10,
+          x: 50
+        }
       },
       {
-        "ID/persoon": 72,
+        "Persoon": 72,
         "lievelingsmerk": "Geen",
-        "slaapkamergrootte": 19,
-        "kledingstukken": 100
+        data: {
+          y: 19,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 73,
+        "Persoon": 73,
         "lievelingsmerk": "Geen",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 90
+        data: {
+          y: 20,
+          x: 90
+        }
       },
       {
-        "ID/persoon": 74,
+        "Persoon": 74,
         "lievelingsmerk": "Geen",
-        "slaapkamergrootte": 40,
-        "kledingstukken": 100
+        data: {
+          y: 40,
+          x: 100
+        }
       }
     ]
     const nikeData = [{
-        "ID/persoon": 75,
+        "Persoon": 75,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 8,
-        "kledingstukken": 100
+        data: {
+          y: 8,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 76,
+        "Persoon": 76,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 19,
-        "kledingstukken": 200
+        data: {
+          y: 19,
+          x: 200
+        }
       },
       {
-        "ID/persoon": 77,
+        "Persoon": 77,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 40
+        data: {
+          y: 20,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 78,
+        "Persoon": 78,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 50
+        data: {
+          y: 20,
+          x: 50
+        }
       },
       {
-        "ID/persoon": 79,
+        "Persoon": 79,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 20,
-        "kledingstukken": 50
+        data: {
+          y: 20,
+          x: 50
+        }
       },
       {
-        "ID/persoon": 80,
+        "Persoon": 80,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 23,
-        "kledingstukken": 40
+        data: {
+          y: 23,
+          x: 40
+        }
       },
       {
-        "ID/persoon": 81,
+        "Persoon": 81,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 24,
-        "kledingstukken": 20
+        data: {
+          y: 24,
+          x: 20
+        }
       },
       {
-        "ID/persoon": 82,
+        "Persoon": 82,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 32,
-        "kledingstukken": 80
+        data: {
+          y: 32,
+          x: 80
+        }
       },
       {
-        "ID/persoon": 83,
+        "Persoon": 83,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 48,
-        "kledingstukken": 100
+        data: {
+          y: 48,
+          x: 100
+        }
       },
       {
-        "ID/persoon": 84,
+        "Persoon": 84,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 21,
-        "kledingstukken": 30
+        data: {
+          y: 21,
+          x: 30
+        }
       },
       {
-        "ID/persoon": 85,
+        "Persoon": 85,
         "lievelingsmerk": "Nike",
-        "slaapkamergrootte": 25,
-        "kledingstukken": 60
+        data: {
+          y: 25,
+          x: 60
+        }
       }
     ]
 
@@ -523,93 +687,48 @@ export default {
           fill: false,
           borderColor: 'rgba(226,20,45,1)',
           backgroundColor: 'rgba(226,20,45,0.7)',
-          labels: ["Nike-liefhebber 1", "Nike-liefhebber 2", "Nike-liefhebber 3", "Nike-liefhebber 4", "Nike-liefhebber 5"],
-          data: [{
-            x: nikeData[0].slaapkamergrootte,
-            y: 4
-          }, {
-            x: -1,
-            y: 1
-          }, {
-            x: 0,
-            y: 0
-          }, {
-            x: 1,
-            y: 1
-          }, {
-            x: 2,
-            y: 4
-          }]
+          labels: nikeData.map(function(persoon) {
+            return persoon.Persoon
+          }),
+          data: nikeData.map(function(persoon) {
+            return persoon.data
+          })
         },
         {
           label: 'Adidas',
           fill: false,
           borderColor: 'rgba(0,81,186,1)',
           backgroundColor: 'rgba(0,81,186,0.7)',
-          labels: ["Adidas-liefhebber 1", "Adidas-liefhebber 2", "Adidas-liefhebber 3", "Adidas-liefhebber 4", "Adidas-liefhebber 5"],
-          // for brand=adidas
-          data: [{
-            x: adidasData[0].slaapkamergrootte,
-            y: -4
-          }, {
-            x: -1,
-            y: -1
-          }, {
-            x: 0,
-            y: 1
-          }, {
-            x: 1,
-            y: -1
-          }, {
-            x: 2,
-            y: -4
-          }]
+          labels: adidasData.map(function(persoon) {
+            return persoon.Persoon
+          }),
+          data: adidasData.map(function(persoon) {
+            return persoon.data
+          })
         },
         {
           label: 'Geen',
           fill: false,
           borderColor: 'rgba(232,208,30,1)',
           backgroundColor: 'rgba(232,208,30,0.6)',
-          labels: ["Iemand zonder favoriet merk 1", "Iemand zonder favoriet merk 2", "Iemand zonder favoriet merk 3", "Iemand zonder favoriet merk 4", "Iemand zonder favoriet merk 5"],
-          data: [{
-            x: geenData[0].slaapkamergrootte,
-            y: -1
-          }, {
-            x: 2,
-            y: 3
-          }, {
-            x: 0,
-            y: 8
-          }, {
-            x: 5,
-            y: -2
-          }, {
-            x: 7,
-            y: -3
-          }]
+          labels: geenData.map(function(persoon) {
+            return persoon.Persoon
+          }),
+          data: geenData.map(function(persoon) {
+            return persoon.data
+          })
         },
         {
           label: 'Anders',
           fill: false,
           borderColor: 'rgba(119,136,153,1)',
           backgroundColor: 'rgba(119,136,153,0.6)',
-          labels: ["Liefhebber van ander merk 1", "Liefhebber van ander merk 2", "Liefhebber van ander merk 3", "Liefhebber van ander merk 4", "Liefhebber van ander merk 5"],
-          data: [{
-            x: andersData[0].slaapkamergrootte,
-            y: -2
-          }, {
-            x: -6,
-            y: -6
-          }, {
-            x: 3,
-            y: 7
-          }, {
-            x: 5,
-            y: -3
-          }, {
-            x: 1,
-            y: -2
-          }]
+          labels: andersData.map(function(persoon) {
+            return persoon.Persoon
+          }),
+          data: andersData.map(function(persoon) {
+            return persoon.data
+          })
         }
       ]
     }, {
@@ -619,6 +738,7 @@ export default {
         display: true,
         text: this.title
       },
+      // radius: 10,
       scales: {
         yAxes: [{
           id: 'left-y-axis',
@@ -626,13 +746,13 @@ export default {
           position: 'left',
           scaleLabel: {
             display: true,
-            labelString: 'Grootte slaapkamer',
+            labelString: 'Grootte van de slaapkamer',
             fontSize: 15,
           },
           ticks: {
             suggestedMin: 0,
-            suggestedMax: 15,
-            stepSize: 2,
+            suggestedMax: 60,
+            stepSize: 10,
             // Include m²-sign in the ticks
             callback: function(value) {
               return value + 'm²'
@@ -646,24 +766,25 @@ export default {
             fontSize: 15,
           },
           ticks: {
-            suggestedMin: 10,
+            suggestedMin: 0,
             suggestedMax: 300,
             stepSize: 25
           }
         }]
       },
       tooltips: {
-      callbacks: {
+        callbacks: {
           label: function(tooltipItem, data) {
-              var label = data.datasets[tooltipItem.datasetIndex].labels[tooltipItem.index] || ''
-              if (label) {
-                  label += ': '
-              }
-              let tooltipLabel = label + tooltipItem.xLabel + 'm² kamerruimte' + ', voor ' + tooltipItem.yLabel + ' kledingstukken'
-              return tooltipLabel
+            var label = data.datasets[tooltipItem.datasetIndex].labels[tooltipItem.index]
+
+            if (label) {
+              label += ': '
+            }
+            let tooltipLabel = "Persoon/ID " + label +  ": " + tooltipItem.yLabel + 'm² kamerruimte' + ', voor ' + tooltipItem.xLabel + ' kledingstukken'
+            return tooltipLabel
           }
+        }
       }
-  }
 
     })
   }
