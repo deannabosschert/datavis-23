@@ -44,7 +44,7 @@ export default {
           responsive: true,
           title: {
             display: true,
-            text: 'Favoriete merk onder ID20-studenten'
+            text: this.title
           },
           maintainAspectRatio: true
         }

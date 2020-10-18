@@ -25,10 +25,10 @@ export default {
               data: [11, 5, 5, 62],
               label: this.title,
               backgroundColor: [
-                'rgba(226,20,45, 0.5)',
-                'rgba(55,23,119, 0.5)',
-                'rgba(211,211,211, 0.5)',
-                'rgba(119,136,153, 0.4)'
+                'rgba(226,20,45, 0.6)',
+                'rgb(0,81,186, 0.6)',
+                'rgb(232,208,30, 0.3)',
+                'rgba(119,136,153, 0.3)'
               ],
               borderColor: [
                 'rgba(226,20,45, 1)',
@@ -44,7 +44,7 @@ export default {
           responsive: true,
           title: {
             display: true,
-            text: 'Favoriete merk onder ID20-studenten'
+            text: this.title
           },
           maintainAspectRatio: true
         }
