@@ -1,7 +1,5 @@
-import {
-  Scatter
-} from 'vue-chartjs'
-
+// source: https://github.com/apertureless/vue-chartjs/blob/develop/src/examples/ScatterExample.js
+import { Scatter } from "vue-chartjs";
 export default {
   extends: Scatter,
   props: {
@@ -14,52 +12,56 @@ export default {
   components: {
     Scatter
   },
-  mounted() {
-    this.renderScatterChart()
-  },
-  methods: {
-    renderScatterChart() {
-      this.renderChart({
-        xLabels: ["January", "February", "March", "April", "May", "June", "July"],
-         yLabels: ['Request Added', 'Request Viewed', 'Request Accepted', 'Request Solved', 'Solving Confirmed'],
-         datasets: [{
-          data: [{
-            x: -10,
-            y: 0
-          }, {
-            x: 0,
-            y: 10
-          }, {
-            x: 10,
-            y: 5
-          }, {
-            x: 5,
-            y: 8
-          }],
-          label: this.title
-        },
-        {
-          data: [{
-            x: -5,
-            y: 2
-          }, {
-            x: 4,
-            y: 5
-          }, {
-            x: 3,
-            y: 3
-          }, {
-            x: 2,
-            y: 9
-          }],
-          label: 'tweeeeee'
+  mounted () {
+    this.renderChart({
+      datasets: [{
+        label: 'Scatter Dataset 1',
+        fill: false,
+        borderColor: '#f87979',
+        backgroundColor: '#f87979',
+        data: [{
+          x: -2,
+          y: 4
+        }, {
+          x: -1,
+          y: 1
+        }, {
+          x: 0,
+          y: 0
+        }, {
+          x: 1,
+          y: 1
+        }, {
+          x: 2,
+          y: 4
         }]
-      }, {
-        responsive: true,
-        title: {
-          display: true,
-          text: 'Favoriete merk onder ID20-studenten'
-        }      })
-    }
+      },
+      {
+        label: 'Scatter Dataset 2',
+        fill: false,
+        borderColor: '#7acbf9',
+        backgroundColor: '#7acbf9',
+        data: [{
+          x: -2,
+          y: -4
+        }, {
+          x: -1,
+          y: -1
+        }, {
+          x: 0,
+          y: 1
+        }, {
+          x: 1,
+          y: -1
+        }, {
+          x: 2,
+          y: -4
+        }]
+      }]
+    }, {responsive: true, maintainAspectRatio: false,  title: {
+      display: true,
+      text: this.title
+    } })
   }
+
 }
