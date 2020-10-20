@@ -2,7 +2,7 @@
 <div :id="category">
 
   <section>
-    <h2>{{ title }}</h2>
+    <h2 class="brandHeader">{{ title }}</h2>
 
     <article id="stats-1">
       <p class="intro">Nice. Dan heb je dus dezelfde voorkeur als..</p>
