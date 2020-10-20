@@ -76,6 +76,8 @@ h1 {
   margin-bottom: calc((#{$baseline} - #{$h1}) + #{$baseline});
   font-variant: small-caps;
   font-weight: 600;
+  color: $something-purple-light;
+  text-shadow: -0.01px -0.01px 0 #787878;
 }
 
 h2 {
