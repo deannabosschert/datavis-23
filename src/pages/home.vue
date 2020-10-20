@@ -5,15 +5,15 @@
     <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @idgaf-click="choice = 'idgaf'" />
 
     <div v-if="choice === 'nike'">
-      <Nike title="Nike" category="nike" brand="Nike"/>
+      <Nike title="Nike" category="nike" brand="Nike" voorkeur="een visje" branditem="de geliefde Nike-joggers"/>
     </div>
 
     <div v-if="choice === 'adidas'">
-      <Adidas title="Adidas" category="adidas" brand="Adidas" />
+      <Adidas title="Adidas" category="adidas" brand="Adidas" voorkeur="een techkech" branditem="de welbekende Adidas-jacks"/>
     </div>
 
     <div v-if="choice === 'idgaf'">
-      <Idgaf title="Idgaf" category="idgaf" brand="Geen"/>
+      <Idgaf title="Idgaf" category="idgaf" brand="Geen" voorkeur="geen van beide" branditem="unbranded uhh.. jacks/joggers?"/>
     </div>
   </div>
 </main>

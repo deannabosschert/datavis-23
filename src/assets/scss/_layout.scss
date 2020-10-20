@@ -63,7 +63,7 @@ section {
 }
 
 article {
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
 }
 
 span {}
@@ -92,6 +92,7 @@ input[type=button] {
   color: white;
   border-radius: 5px;
   box-shadow: 3px 3px 2px 2px rgba(0,0,0,1);
+  text-align: center;
 }
 
 .woordenwolk {
@@ -136,6 +137,7 @@ input[type=button] {
 }
 
 #stats-1 div {
+  min-width: 370px;
   max-width: 40%;
   padding: 0.1rem;
   margin-left: 0.3rem;
@@ -147,7 +149,7 @@ input[type=button] {
   text-align: center;
 }
 
-#stats-1 h3 {
+ h3 {
   line-height: 1.3;
 }
 
@@ -157,15 +159,71 @@ input[type=button] {
   font-style: italic;
 }
 
+a {
+  font-weight: bold;
+}
+
+.stats-2, .stats-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-2 .text {
+  display: flex;
+  flex-direction: column;
+  min-width: 370px;
+  max-width: 30%;
+  padding: 0.4rem;
+  margin: 0.2rem;
+}
+
+.stats-2 .radar-charts {
+  display: flex;
+  flex-direction: row;
+  min-width: 370px;
+  max-width: 60%;
+  padding: 0.1rem;
+}
+
+.radar-chart-1, .radar-chart-2 {
+  max-width: 100%;
+  padding: 0.7rem;
+  margin: 0.4rem;
+}
+
+.stats-2 a, .stats-3 a {
+  width: 7rem;
+}
+
+.stats-3 .text {
+  display: flex;
+  flex-direction: column;
+  min-width: 370px;
+  max-width: 30%;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
 
 
+.stats-3 .scatter-chart {
+  max-width: 60%;
+  padding: 1rem;
+}
+
+.stats-3 .scatter {
+  max-width: 100%;
+}
 
 
-.selected {
+.selectedButton {
   background-color: white;
   color: black;
   box-shadow: inset 3px 3px 2px 2px rgba(0,0,0,1);
 }
+
 
 .fade-enter-active,
 .fade-leave-active {
