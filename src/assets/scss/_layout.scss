@@ -208,13 +208,26 @@ a {
   margin: 0.2rem;
 }
 
+.stats-5 .text  {
+ display: flex;
+ flex-direction: column;
+ min-width: 370px;
+ max-width: 30%;
+ padding: 0.4rem;
+ margin: 0.6rem;
+}
+
+.radar-chart-amount {
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
 
 .stats-3 .scatter-chart, .stats-4 .bar-chart {
   max-width: 60%;
   padding: 1rem;
 }
 
-.stats-3 .scatter, .stats-4 .bar {
+.stats-3 .scatter, .stats-4 .bar, .stats-5 .radar-amount {
   max-width: 100%;
 }
 
