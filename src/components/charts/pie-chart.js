@@ -43,7 +43,7 @@ export default {
           borderWidth: 1
         }]
       }, {
-        responsive: true,
+        responsive: false,
         title: {
           display: true,
           text: this.title
