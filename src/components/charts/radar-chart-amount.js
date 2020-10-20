@@ -45,12 +45,12 @@ export default {
 
      },
       {
-        responsive: true,
+        responsive: false,
         title: {
           display: true,
           text: this.title
         },
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         scale: {
            angleLines: {
                display: false

@@ -45,7 +45,7 @@ export default {
 
      },
       {
-        responsive: true,
+        responsive: false,
         title: {
           display: true,
           text: this.title
