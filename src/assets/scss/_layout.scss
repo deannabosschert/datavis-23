@@ -162,7 +162,7 @@ a {
   font-weight: bold;
 }
 
-.stats-2, .stats-3 {
+.stats-2, .stats-3, .stats-4, .stats-5 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -193,11 +193,11 @@ a {
   margin: 0.4rem;
 }
 
-.stats-2 a, .stats-3 a {
+.stats-2 a, .stats-3 a, .stats-4 a {
   width: 7rem;
 }
 
-.stats-3 .text {
+.stats-3 .text, .stats-4 .text {
   display: flex;
   flex-direction: column;
   min-width: 370px;
@@ -207,12 +207,12 @@ a {
 }
 
 
-.stats-3 .scatter-chart {
+.stats-3 .scatter-chart, .stats-4 .bar-chart {
   max-width: 60%;
   padding: 1rem;
 }
 
-.stats-3 .scatter {
+.stats-3 .scatter, .stats-4 .bar {
   max-width: 100%;
 }
 
