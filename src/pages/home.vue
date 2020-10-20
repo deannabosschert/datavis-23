@@ -1,44 +1,39 @@
 <template>
 <main id="home">
-  <h1>datavisualisatie id</h1>
-  <section class="active">
+  <div class="all">
     <h2>Waar gaat je voorkeur naar uit?</h2>
-    <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @idgaf-click="choice = 'idgaf'" />
+    <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @geen-click="choice = 'geen'" />
 
     <div v-if="choice === 'nike'">
-      <Nike title="Nike" category="nike" />
+      <BrandChoice title="Nike" category="nike" piechartpercentage="13" introbrand="Nike als" brand="Nike" voorkeur="een visje" branditem="de geliefde Nike-joggers" happinessquote="best wel prima zit zo dan! Only happy thoughts <3"/>
     </div>
 
     <div v-if="choice === 'adidas'">
-      <Adidas title="Adidas" category="adidas" />
+      <BrandChoice title="Adidas" category="adidas" piechartpercentage="6" introbrand="Adidas als" brand="Adidas" voorkeur="een techkech" branditem="de welbekende Adidas-jacks" happinessquote="misschien voortaan beter voor een ander merk kunt gaan.. anything other than Adidas in ieder geval 🧐"/>
     </div>
 
-    <div v-if="choice === 'idgaf'">
-      <Idgaf title="Idgaf" category="idgaf" />
+    <div v-if="choice === 'geen'">
+      <BrandChoice title="Geen merk" category="geen" piechartpercentage="6" introbrand="het ontbreken van een" brand="Geen" voorkeur="niet te plaatsen" branditem="uhh.. unbranded jacks/joggers?" happinessquote="best wel prima zit zo dan! Misschien één Nike-petje in huis halen om nét wat extra zonnestralen naar binnen te halen? 🌞"/>
     </div>
-  </section>
+  </div>
 </main>
 </template>
 
 <script>
 import SwitchBetween from "@/components/switchBetween.vue";
-import Nike from "@/components/nike.vue";
-import Adidas from "@/components/adidas.vue";
-import Idgaf from "@/components/idgaf.vue";
+import BrandChoice from "@/components/brandChoice.vue";
 
 export default {
   name: "home",
   data() {
     return {
-      choice: "nike"
+      choice: ""
     };
   },
   methods: {},
   components: {
     SwitchBetween,
-    Nike,
-    Adidas,
-    Idgaf
+    BrandChoice
   }
 };
 </script>
