@@ -1,22 +1,21 @@
 <template>
 <main id="home">
-  <h1>datavisualisatie id</h1>
-  <section class="active">
+  <div class="all">
     <h2>Waar gaat je voorkeur naar uit?</h2>
     <SwitchBetween class="choices" @nike-click="choice = 'nike'" @adidas-click="choice = 'adidas'" @idgaf-click="choice = 'idgaf'" />
 
     <div v-if="choice === 'nike'">
-      <Nike title="Nike" category="nike" />
+      <Nike title="Nike" category="nike" brand="Nike"/>
     </div>
 
     <div v-if="choice === 'adidas'">
-      <Adidas title="Adidas" category="adidas" />
+      <Adidas title="Adidas" category="adidas" brand="Adidas" />
     </div>
 
     <div v-if="choice === 'idgaf'">
-      <Idgaf title="Idgaf" category="idgaf" />
+      <Idgaf title="Idgaf" category="idgaf" brand="Geen"/>
     </div>
-  </section>
+  </div>
 </main>
 </template>
 
