@@ -75,7 +75,7 @@
     <transition name="fade">
       <article class="stats-5">
         <div class="text">
-          <h3>Wat deden we vorig jaar?</h3>
+          <h3>Wat deden we vorig jaar dan?</h3>
           <p>Is dit jaar eigenlijk representatief voor de gemiddelde verdeling van de merkgebondenheid?</p>
           <p>Hmm.. zo te zien zijn we dit jaar flink minder van de Adidasjes, en neigen we hoe dan ook naar andere merken.</p>
         </div>
@@ -110,10 +110,10 @@ export default {
   },
   data() {
     return {
-      showStats2: true,
-      showStats3: true,
-      showStats4: true,
-      showStats5: true,
+      showStats2: false,
+      showStats3: false,
+      showStats4: false,
+      showStats5: false,
       button1: "Let's find out!",
       button2: "Ik wil meer weten",
       button3: "meer kekke insights",
