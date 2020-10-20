@@ -6,7 +6,6 @@
       class="switchBetween_radio"
       name="switchBetween-input"
       value="nike"
-      checked
     />
     <label for="nike" class="switchBetween_label">
      Nike
@@ -24,13 +23,13 @@
 
     <input
       type="radio"
-      id="idgaf"
+      id="geen"
       class="switchBetween_radio"
       name="switchBetween-input"
-      value="idgaf"
+      value="geen"
     />
-    <label for="idgaf" class="switchBetween_label">
-      Idgaf
+    <label for="geen" class="switchBetween_label">
+      Geen
     </label>
   </form>
 </template>
@@ -45,8 +44,8 @@ export default {
       else if (event.target.value === "adidas") {
         return this.$emit("adidas-click")
       }
-      else if (event.target.value === "idgaf") {
-        return this.$emit("idgaf-click")
+      else if (event.target.value === "geen") {
+        return this.$emit("geen-click")
       }
     }
   }
@@ -65,6 +64,7 @@ export default {
   padding: 1.2rem;
   border-radius: 5px;
   background: white;
+  box-shadow: 3px 3px 2px 2px $something-purple-dark;
   text-align: center;
   align-self: center;
   font-weight: 600;
@@ -73,6 +73,8 @@ export default {
 .switchBetween_radio:checked + .switchBetween_label {
   background: black;
   color: white;
+  box-shadow: 3px 3px 2px 2px black;
+
 }
 
 input[type="radio"] {

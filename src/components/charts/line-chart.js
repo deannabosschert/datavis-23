@@ -46,7 +46,7 @@ export default {
             display: true,
             text: this.title
           },
-          maintainAspectRatio: true
+          maintainAspectRatio: false
         }
       )
     }

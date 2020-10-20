@@ -4,6 +4,9 @@ $adidas-blue: rgb(0,81,186);
 $none-yellow: rgb(232,208,30);
 $other-green: rgb(42,247,148);
 $something-purple: rgb(139,13,217);
+$something-purple-light: rgba(139,13,217, 0.3);
+$something-purple-dark: rgba(27,2,43, 0.3);
+
 
 $nike-red-hex: #E2142D;
 $adidas-blue-hex: #0051ba;
@@ -21,7 +24,7 @@ $adidas-chart-bc: rgba(0,81,186,1);
 $none-chart-bc: rgba(232,208,30,1);
 $other-chart-bc: rgba(119,136,153,1);
 
-$baseline: 1.2rem;
+$baseline: 1.1rem;
 
 $minScreen: 20rem;
 $maxScreen: 50rem;
