@@ -55,26 +55,40 @@
 
   <section id="stats-4" v-if="showStats4">
     <transition name="fade">
-      <article>
-        <h3>Maakt een merk gelukkig?</h3>
-        <p>Hierbij is gekeken naar het cijfer dat de student met dit merk antwoordde op de vraag "Hoe tevreden ben je met je leven?". Het betreft het gemiddelde antwoord, berekend over de responses binnen het desbetreffende merk.</p>
+      <article class="stats-4">
+        <div class="text">
+          <h3>Maakt je merk gelukkig?</h3>
+          <p>Hierbij is gekeken naar het cijfer dat de gemiddelde merk-liefhebber antwoordde op de vraag "Hoe tevreden ben je met je leven?".</p>
+          <p>Hiernaast zie je de gemiddeld gegeven cijfers, berekend over 't aantal responses binnen het desbetreffende merk.</p>
+          <p>Ik denk dat je {{ happinessquote }} </p>
+          <a class="button4" v-on:click="[showStats5 = !showStats5, reverseButton4()]" href="#" v-scroll-to="'#stats-5'">{{ button4 }}</a>
+        </div>
         <div class="bar-chart">
-          <bar-chart title="Happiness-rating per favoriet merk" />
-        </div>
-
-        <div class="chart-ding">
-          <radar-chart-amount title="Favoriete merken per jaar" />
-        </div>
-
-        <div class="chart-ding">
-          <line-chart title="Favoriete merk onder ID20-studenten" />
+          <bar-chart title="Happiness-rating per favoriet merk" class="bar" />
         </div>
       </article>
     </transition>
   </section>
 
 
+  <section id="stats-5" v-if="showStats5">
+    <transition name="fade">
+      <article class="stats-5">
+        <div class="text">
+          <h3>Verhouding kleding/space</h3>
+          <p>Blabla</p>
+        </div>
+        <div class="chart-ding">
+          <radar-chart-amount title="Favoriete merken per jaar" />
+        </div>
+        <div class="chart-ding">
+          <line-chart title="Favoriete merk onder ID20-studenten" />
+        </div>
 
+
+      </article>
+    </transition>
+  </section>
 
 </div>
 </template>
@@ -105,9 +119,11 @@ export default {
       showStats2: false,
       showStats3: false,
       showStats4: false,
+      showStats5: false,
       button1: "Let's find out!",
       button2: "Ik wil meer weten",
-      button3: "nog meer dingen"
+      button3: "nog meer dingen",
+      button4: "de volgende dingen"
     };
   },
   methods: {
@@ -146,6 +162,18 @@ export default {
         buttonDing3.classList.remove("selectedButton");
         return
       }
+    },
+    reverseButton4() {
+      let buttonDing4 = document.querySelector(".button4");
+      if (this.button4 === "de volgende dingen") {
+        this.button4 = this.button4.replace(/volgende/i, 'vorige');
+        buttonDing4.classList.add("selectedButton");
+        return
+      } else if (this.button4 === "de vorige dingen") {
+        this.button4 = this.button4.replace(/vorige/i, 'volgende');
+        buttonDing4.classList.remove("selectedButton");
+        return
+      }
     }
   },
   props: {
@@ -174,6 +202,10 @@ export default {
       required: true
     },
     introbrand: {
+      type: String,
+      required: true
+    },
+    happinessquote: {
       type: String,
       required: true
     }
