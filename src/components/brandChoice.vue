@@ -2,14 +2,14 @@
 <div :id="category">
 
   <section>
-    <h2 class="nikeHeader">{{ title }}</h2>
+    <h2>{{ title }}</h2>
 
     <article id="stats-1">
-      <p class="nikeIntro">Nice. Dan heb je dus dezelfde voorkeur als..</p>
+      <p class="intro">Nice. Dan heb je dus dezelfde voorkeur als..</p>
       <pie-chart title="Favoriete merk onder ID20-studenten" />
       <div>
-        <h3>13% van de studenten in Information Design!</h3>
-        <p>Zou je nog meer gemeen hebben met deze studenten dan alleen jullie lievelingsmerk?</p>
+        <h3>{{ piechartpercentage }}% van de studenten in Information Design!</h3>
+        <p>Zou je nog meer gemeen hebben met deze studenten dan alleen {{ introbrand }} lievelingsmerk?</p>
         <a class="button1" @click="[showStats2 = !showStats2, reverseButton1()]" href="#" v-scroll-to="'#stats-2'">{{ button1 }}</a>
       </div>
     </article>
@@ -166,6 +166,14 @@ export default {
       required: true
     },
     branditem: {
+      type: String,
+      required: true
+    },
+    piechartpercentage: {
+      type: String,
+      required: true
+    },
+    introbrand: {
       type: String,
       required: true
     }
