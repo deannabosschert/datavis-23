@@ -75,17 +75,13 @@
     <transition name="fade">
       <article class="stats-5">
         <div class="text">
-          <h3>Verhouding kleding/space</h3>
-          <p>Blabla</p>
+          <h3>Wat deden we vorig jaar dan?</h3>
+          <p>Is dit jaar eigenlijk representatief voor de gemiddelde verdeling van de merkgebondenheid?</p>
+          <p>Hmm.. zo te zien zijn we dit jaar flink minder van de Adidasjes, en neigen we hoe dan ook naar andere merken.</p>
         </div>
-        <div class="chart-ding">
-          <radar-chart-amount title="Favoriete merken per jaar" />
+        <div class="radar-chart-amount">
+          <radar-chart-amount title="Favoriete merken per jaar" class="radar-amount"/>
         </div>
-        <div class="chart-ding">
-          <line-chart title="Favoriete merk onder ID20-studenten" />
-        </div>
-
-
       </article>
     </transition>
   </section>
@@ -97,7 +93,6 @@
 /*eslint 'no-console':0*/
 import BarChart from './charts/bar-chart.js'
 import PieChart from './charts/pie-chart.js'
-import LineChart from './charts/line-chart.js'
 import RadarChart2019 from './charts/radar-chart-2019.js'
 import RadarChart2020 from './charts/radar-chart-2020.js'
 import RadarChartAmount from './charts/radar-chart-amount.js'
@@ -108,7 +103,6 @@ export default {
   components: {
     BarChart,
     PieChart,
-    LineChart,
     RadarChart2019,
     RadarChart2020,
     RadarChartAmount,
@@ -122,8 +116,8 @@ export default {
       showStats5: false,
       button1: "Let's find out!",
       button2: "Ik wil meer weten",
-      button3: "nog meer dingen",
-      button4: "de volgende dingen"
+      button3: "meer kekke insights",
+      button4: "gooi meer stats!"
     };
   },
   methods: {
@@ -153,11 +147,11 @@ export default {
     },
     reverseButton3() {
       let buttonDing3 = document.querySelector(".button3");
-      if (this.button3 === "nog meer dingen") {
+      if (this.button3 === "meer kekke insights") {
         this.button3 = this.button3.replace(/meer/i, 'minder');
         buttonDing3.classList.add("selectedButton");
         return
-      } else if (this.button3 === "nog minder dingen") {
+      } else if (this.button3 === "minder kekke insights") {
         this.button3 = this.button3.replace(/minder/i, 'meer');
         buttonDing3.classList.remove("selectedButton");
         return
@@ -165,12 +159,12 @@ export default {
     },
     reverseButton4() {
       let buttonDing4 = document.querySelector(".button4");
-      if (this.button4 === "de volgende dingen") {
-        this.button4 = this.button4.replace(/volgende/i, 'vorige');
+      if (this.button4 === "gooi meer stats!") {
+        this.button4 = this.button4.replace(/meer/i, 'minder');
         buttonDing4.classList.add("selectedButton");
         return
-      } else if (this.button4 === "de vorige dingen") {
-        this.button4 = this.button4.replace(/vorige/i, 'volgende');
+      } else if (this.button4 === "gooi minder stats!") {
+        this.button4 = this.button4.replace(/minder/i, 'meer');
         buttonDing4.classList.remove("selectedButton");
         return
       }

@@ -22,45 +22,45 @@ export default {
     renderRadarChart() {
       this.renderChart({
         labels: ['Dataviz/ID', 'Frontend', 'Design Research', 'UX', 'Interaction Design', 'Visual Design'],
-            datasets: [{
-              label: 'Nike',
-                data: [1, 5, 0, 6, 6, 7],
+        datasets: [{
+          label: 'Nike',
+          data: [1, 5, 0, 6, 6, 7],
           backgroundColor: [
-            'rgba(54, 162, 235, 0.2)'
+            'rgba(226,20,45,0.25)'
           ],
           borderColor: [
-            'rgba(54, 162, 235, 1)'
+            'rgba(226,20,45,1)'
           ],
-          borderWidth: 1
-        }, {      label: 'Adidas',
-            data: [1, 3, 1, 2, 3, 6],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)'
-      ],
-      borderWidth: 1
-    }]
+          borderWidth: 0.75
+        }, {
+          label: 'Adidas',
+          data: [1, 3, 1, 2, 3, 6],
+          backgroundColor: [
+            'rgba(0,81,186,0.25)'
+          ],
+          borderColor: [
+            'rgba(0,81,186,1)'
+          ],
+          borderWidth: 0.75
+        }]
 
-     },
-      {
-        responsive: true,
+      }, {
+        responsive: false,
         title: {
           display: true,
           text: this.title
         },
         maintainAspectRatio: false,
         scale: {
-           angleLines: {
-               display: false
-           },
-           ticks: {
-               suggestedMin: 0,
-               suggestedMax: 8,
-               stepSize: 1
-           }
-       }
+          angleLines: {
+            display: false
+          },
+          ticks: {
+            suggestedMin: 0,
+            suggestedMax: 8,
+            stepSize: 1
+          }
+        }
       })
     }
   }
