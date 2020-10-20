@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header>
+        <h1>datavisualisatie id</h1>
       <!-- <router-link class="homeSymbol" to="/">&#127968; home</router-link> -->
       <!-- <router-link class="infoSymbol" to="/info">&#8505; info</router-link> -->
     </header>
