@@ -1,9 +1,7 @@
 # Datavisualisatie 2+3
 
 ## Link to live demo
-[https://datavisualisaties.netlify.app/#/](https://datavisualisaties.netlify.app/#/)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/79cd5b72-7969-4ac1-831d-167cf0a2cba3/deploy-status)](https://app.netlify.com/sites/datavisualisaties/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/79cd5b72-7969-4ac1-831d-167cf0a2cba3/deploy-status)](https://app.netlify.com/sites/datavisualisaties/deploys)     [https://datavisualisaties.netlify.app/#/](https://datavisualisaties.netlify.app/#/) 
 
 ![screenshot of website](https://github.com/deannabosschert/datavis-23/blob/trunk/src/assets/img/screencapture.gif)
 
