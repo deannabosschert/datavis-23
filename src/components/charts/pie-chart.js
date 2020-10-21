@@ -29,18 +29,18 @@ export default {
           ],
           label: this.title,
           backgroundColor: [
-            'rgba(226,20,45, 0.6)',
-            'rgb(0,81,186, 0.6)',
-            'rgb(232,208,30, 0.3)',
-            'rgba(119,136,153, 0.3)'
+            'rgba(226,20,45,0.6)',
+            'rgba(0,81,186,0.6)',
+            'rgba(232,208,30,0.3)',
+            'rgba(119,136,153,0.3)'
           ],
           borderColor: [
             'rgba(226,20,45, 1)',
-            'rgba(55,23,119, 1)',
-            'rgba(211,211,211, 1)',
-            'rgba(119,136,153, 1)'
+            'rgba(0,81,186,1)',
+            'rgba(232,208,30,1)',
+            'rgba(119,136,153,0.75)'
           ],
-          borderWidth: 1
+          borderWidth: 0.75
         }]
       }, {
         responsive: false,
