@@ -77,7 +77,8 @@
         <div class="text">
           <h3>Wat deden we vorig jaar dan?</h3>
           <p>Is dit jaar eigenlijk representatief voor de gemiddelde verdeling van de merkgebondenheid?</p>
-          <p>Hmm.. zo te zien zijn we dit jaar flink minder van de Adidasjes, en neigen we hoe dan ook naar andere merken.</p>
+          <p>Hmm.. zo te zien zijn we dit jaar flink minder van de Adidasjes, en neigen we hoe dan ook wat meer naar andere merken.</p>
+          <p>Om dan te zeggen dat deze 'conclusies' leidend zijn, daar is de sample überhaupt wat klein voor geweest. Bovenstaande insights laten vooral zien hoe alles in relatie tot déze groep in dít jaar staat, en dat is wat nu relevant is.</p>
         </div>
         <div class="radar-chart-amount">
           <radar-chart-amount title="Favoriete merken per jaar" class="radar-amount"/>
