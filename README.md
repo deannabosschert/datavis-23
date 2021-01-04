@@ -1,9 +1,13 @@
 # Datavisualisatie 2+3
+[![Netlify Status](https://api.netlify.com/api/v1/badges/79cd5b72-7969-4ac1-831d-167cf0a2cba3/deploy-status)](https://app.netlify.com/sites/datavisualisaties/deploys)  
 
-## Link to live demo
-[![Netlify Status](https://api.netlify.com/api/v1/badges/79cd5b72-7969-4ac1-831d-167cf0a2cba3/deploy-status)](https://app.netlify.com/sites/datavisualisaties/deploys)     [https://datavisualisaties.netlify.app/#/](https://datavisualisaties.netlify.app/#/) 
+Digital prototype of a storytelling-based series of datavisualizations based on data from a survey.
 
-![screenshot of website](https://github.com/deannabosschert/datavis-23/blob/trunk/src/assets/img/screencapture.gif)
+**Link to live demo:** https://datavisualisaties.netlify.app/#/)
+
+**Link to gitbook:** https://deanna-bosschert.gitbook.io/dataviz-2021/
+
+![screenshot gif of website](https://github.com/deannabosschert/datavis-23/blob/trunk/src/assets/img/screencapture.gif)
 
 ## Installation
 ` npm install -g @vue/cli ` ==> install vue cli globally
